@@ -1,0 +1,129 @@
+@font-face {
+  font-family: GrenadierNF;
+  src: url(GrenadierNF.otf);
+}
+
+body {
+  font-family: GrenadierNF;
+  background-image: url('art_deco_sym.jpg');
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+  background-size: 100%;
+}
+
+nav {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#18274b+1,18274b+100&1+0,1+81,0+100 */
+  background: -moz-linear-gradient(top, rgba(24,39,75,1) 0%, rgba(24,39,75,1) 1%, rgba(24,39,75,1) 81%, rgba(24,39,75,0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(24,39,75,1) 0%,rgba(24,39,75,1) 1%,rgba(24,39,75,1) 81%,rgba(24,39,75,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(24,39,75,1) 0%,rgba(24,39,75,1) 1%,rgba(24,39,75,1) 81%,rgba(24,39,75,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#18274b', endColorstr='#0018274b',GradientType=0 ); /* IE6-9 */
+
+  z-index: 2;
+}
+
+.navbar-brand {
+  font-size: 3em;
+}
+
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-brand {
+  color: #CEBE64;
+}
+
+
+#outside-border {
+  border: solid #18274B 15px;
+  border-radius: 27px;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 0 0 15px #18274B;
+  outline: 15px solid #18274B;
+  overflow: scroll;
+  pointer-events: none;
+  z-index: 1;
+}
+
+#outside-border:before {
+  z-index: 1;
+  content: " ";
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border: 5px solid #CEAB64;
+  border-radius: 13px;
+  /*pointer-events: none;*/
+}
+
+#clickable {
+  pointer-events: auto;
+}
+
+.under-content {
+  z-index: -1;
+}
+
+.card {
+  margin: 15px 0px;
+  background-color: #18274B;
+  color: #E8DC95;
+  border: 5px solid #CEAB64;
+  border-radius: 13px;
+}
+
+.card:hover {
+  background-color: #091533; 
+  border-color: #A68136;
+}
+
+.card a:hover {
+  text-decoration: none;
+}
+
+.card h3 {
+  color: white;
+}
+
+.card-subtitle {
+  color: #6c757d;
+}
+
+.card-text {
+  color: #CEAB64;
+}
+
+.card a:hover .card-text {
+  color: white;
+}
+
+.row {
+  margin-bottom: 50px;
+}
+
+.btn-gold {
+  background-color: #CEAB64;
+}
+
+form.inline-form {
+  display: inline;
+}
+
+form.formatted-form {
+  margin: 15px 0px;
+  padding: 20px;
+  background-color: #18274B;
+  color: #E8DC95;
+  border: 5px solid #CEAB64;
+  border-radius: 13px;
+}
+
+.show-info {
+  margin-top: 80px;
+  padding: 20px;
+  background-color: #18274B;
+  color: #E8DC95;
+  border: 5px solid #CEAB64;
+  border-radius: 13px;
+}
