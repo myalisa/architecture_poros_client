@@ -1,15 +1,15 @@
 <div class="row">
   <div class="col-md-6 offset-md-3 show-info">
-    <h2><%= @building["name"] %></h2>
-    <h3><%= @building["address"] %></h3>
+    <h2><%= @building.name %></h2>
+    <h3><%= @building.address %></h3>
 
-    <h5>Built In <%= @building["construction_date"] %></h5>
-    <h5>Height: <%= @building["height"] %>'</h5>
+    <h5>Built In <%= @building.construction_date %></h5>
+    <h5>Height: <%= @building.height %>'</h5>
 
-    <h4>Architect: <%= @building["architect"] %></h4>
+    <h4>Architect: <%= @building.architect %></h4>
 
-    <a class="btn btn-gold" href="/client/buildings/<%= @building['id'] %>/edit">Edit</a>
-    <%= form_tag "/client/buildings/#{ @building['id'] }", method: :delete, class: "inline-form" do %>
+    <a class="btn btn-gold" href="/client/buildings/<%= @building.id %>/edit">Edit</a>
+    <%= form_tag "/client/buildings/#{ @building.id }", method: :delete, class: "inline-form" do %>
       <input class="btn btn-gold" type="submit" value="Delete">
     <% end %>
   </div>

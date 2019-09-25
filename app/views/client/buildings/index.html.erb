@@ -2,13 +2,13 @@
   <% @buildings.each do |building| %>
     <div class="col-md-4">
       <div class="card">
-        <a href="/client/buildings/<%= building['id'] %>">
+        <a href="/client/buildings/<%= building.id %>">
           <div class="card-body">
-            <h3><%= building["name"] %></h3>
-            <h6 class="card-subtitle mb-2 text-muted"><%= building["address"] %></h6>
-            <p class="card-text">Height: <%= building["height"] %>'</p>
-            <h5 class="card-text">Built In <%= building["construction_date"] %></h5>
-            <h5 class="card-text">Architect: <%= building["architect"] %></h5>
+            <h3><%= building.name %></h3>
+            <h6 class="card-subtitle mb-2 text-muted"><%= building.address %></h6>
+            <p class="card-text">Height: <%= building.height %>'</p>
+            <h5 class="card-text">Built In <%= building.construction_date %></h5>
+            <h5 class="card-text">Architect: <%= building.architect %></h5>
           </div>
         </a>
       </div>
